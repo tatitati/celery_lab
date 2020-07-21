@@ -1,11 +1,16 @@
-Run redis:
+Install celery:
+```
+pip3 install celery
+```
+
+Run redis (broker):
 
 ```
 docker run -d -p 6379:6379 --name redis1 redis
 ```
 
 
-Run workers:
+Run celery workers:
 
 ```
 celery -A  tasks worker  --loglevel=info
