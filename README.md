@@ -17,3 +17,7 @@ Run invoker:
 ```
 python3 invoker.py
 ```
+
+
+More info here:
+https://docs.celeryproject.org/en/stable/getting-started/first-steps-with-celery.html
