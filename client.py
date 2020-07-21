@@ -1,8 +1,8 @@
 import time
-import mytasks
+import tasks
 from celery.result import AsyncResult
 
-result = mytasks.add.delay(1, 2)
+result = tasks.add.delay(1, 2)
 print(result)
 
 while True:
