@@ -30,6 +30,12 @@ python3 client1.py  // this client invoke task "add()" through the queue "low-pr
 python3 client2.py  // this client invoke task "sayhi()" through the queue "celery"
 ```
 
+You can check the status of the tasks and nodes:
+
+```
+celery -A tasks status
+```
+
 
 More info here:
 https://docs.celeryproject.org/en/stable/getting-started/first-steps-with-celery.html
