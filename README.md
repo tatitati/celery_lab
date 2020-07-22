@@ -22,11 +22,12 @@ celery -A  tasks worker  -Q celery,low-priority --loglevel=info
 ```
 
 
-Run invoker:
+Run clients:
 
 ```
 cd src
-python3 client.py
+python3 client1.py  // this client invoke task "add()" through the queue "low-priority"
+python3 client2.py  // this client invoke task "sayhi()" through the queue "celery"
 ```
 
 
