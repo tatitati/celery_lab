@@ -8,7 +8,14 @@ app = Celery(
 	backend='db+sqlite:///results.db'  # where to store the results (optional)
 )
 
+app.config_from_object('celeryconfig')
+
 
 @app.task(name='tasks.add')
 def add(x, y):
 	return x + y	
+
+
+@app.task(name='tasks.sayhi')
+def sayhi():
+	return "hi!!!!!"	

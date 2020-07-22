@@ -13,3 +13,5 @@ while True:
 		print('result after 5 sec wait is: {_result2}'.format(_result2=_result2.get()))
 		break
 	time.sleep(5)
+
+
