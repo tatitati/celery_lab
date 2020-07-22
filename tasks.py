@@ -4,7 +4,7 @@ from celery import Celery
 
 app = Celery(
 	'tasks', 
-	broker='redis://localhost:6379/0', # where to send tasks (to redis)	
+	broker='redis://localhost:6379/0', # where to send tasks (to redis, the broker)	
 	backend='db+sqlite:///results.db'  # where to store the results (optional)
 )
 
